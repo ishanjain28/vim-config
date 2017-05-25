@@ -50,5 +50,6 @@ let g:tagbar_type_go = {
 " Key Mappings
 nmap <F8> :TagbarToggle<CR> 
 map <C-n> :NERDTreeToggle<CR>
-
+nnoremap ; :
+nnoremap Q @q
 
