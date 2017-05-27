@@ -3,7 +3,21 @@ call pathogen#infect()
 
 syntax enable
 set number
+set ts=4
+set autoindent
+set expandtab
+set shiftwidth=4
+set cursorline
+set showmatch
+
+
+" Python Setup
+let python_highlight_all = 1
+
+
+" Golang Setup
 let g:go_disable_autoinstall = 0
+autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
 " Highlight
 let g:go_highlight_functions = 1
@@ -52,4 +66,7 @@ nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 nnoremap ; :
 nnoremap Q @q
-
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap gV `[v`]
+inoremap ;[ <esc>
+nnoremap <leader>s :mksession<CR>
