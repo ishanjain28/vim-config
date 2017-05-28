@@ -2,6 +2,10 @@
 " Golang Setup
 let g:go_disable_autoinstall = 0
 let g:acp_enableAtStartup = 0
+
+" Disable go-def mappings
+let g:go_def_mapping_enabled = 0
+
 autocmd FileType go autocmd BufWritePre <buffer> GoImports
 
 " Highlight
@@ -52,8 +56,8 @@ nnoremap <silent> <C-l> :GoImports<CR><CR>
 " Prints function definition
 au FileType go nmap <Leader>i <Plug>(go-info)
 " Opens function
-au FileType go nmap gd <Plug>(go-def-tab)
+au FileType go nmap <Leader>gd <Plug>(go-def-tab)
 " go run 
 au FileType go nmap <Leader>r <Plug>(go-run)
 " go doc 
-au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap gd <Plug>(go-doc)
