@@ -1,7 +1,8 @@
 
 " Golang Setup
 let g:go_disable_autoinstall = 0
-autocmd FileType go autocmd BufWritePre <buffer> GoFmt
+let g:acp_enableAtStartup = 0
+autocmd FileType go autocmd BufWritePre <buffer> GoImports
 
 " Highlight
 let g:go_highlight_functions = 1
@@ -12,6 +13,9 @@ let g:go_highlight_build_constraints = 1
 
 " Start neocomplete on startup
 let g:neocomplete#enable_at_startup = 1
+" Enable Smart case 
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 
 " tagbar configuration, requires ctags
 let g:tagbar_type_go = {  
@@ -42,6 +46,14 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-" Shortcuts when I am working in GO
+" Go Imports
 nnoremap <silent> <C-l> :GoImports<CR><CR>
 
+" Prints function definition
+au FileType go nmap <Leader>i <Plug>(go-info)
+" Opens function
+au FileType go nmap gd <Plug>(go-def-tab)
+" go run 
+au FileType go nmap <Leader>r <Plug>(go-run)
+" go doc 
+au FileType go nmap <Leader>gd <Plug>(go-doc)

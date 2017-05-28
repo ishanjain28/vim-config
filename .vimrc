@@ -22,9 +22,10 @@ nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 nnoremap ; :
 nnoremap Q @q
-nnoremap <space> :nohlsearch<CR>
-nnoremap gV `[v`]
+nnoremap <Leader> :nohlsearch<CR>
 inoremap ;[ <esc>
 nnoremap <leader>s :mksession<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+let mapleader = " "
