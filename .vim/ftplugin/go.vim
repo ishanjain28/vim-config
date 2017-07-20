@@ -6,6 +6,7 @@ let g:acp_enableAtStartup = 0
 " Disable go-def mappings
 let g:go_def_mapping_enabled = 0
 
+" Run GoImports when saving data from buffer to file
 autocmd FileType go autocmd BufWritePre <buffer> GoImports
 
 " Highlight
@@ -57,7 +58,9 @@ nnoremap <silent> <C-l> :GoImports<CR><CR>
 au FileType go nmap <Leader>i <Plug>(go-info)
 " Opens function
 au FileType go nmap <Leader>gd <Plug>(go-def-tab)
-" go run 
+" Go run, When you are in a project directory and wish to run the project
 au FileType go nmap <Leader>r <Plug>(go-run)
-" go doc 
+" Go Run, Runs currently open and active file
+au FileType go nmap <Leader>ra :<C-u>GoRun %<CR>
+" go doc  
 au FileType go nmap gd <Plug>(go-doc)
