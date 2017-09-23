@@ -26,5 +26,5 @@ nnoremap ; :
 nnoremap <Leader> :nohlsearch<CR>
 inoremap ;[ <esc>
 nnoremap <leader>s :mksession<CR>
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+" nnoremap <C-Left> :tabprevious<CR>
+" nnoremap <C-Right> :tabnext<CR>

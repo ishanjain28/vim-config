@@ -7,7 +7,7 @@ let g:acp_enableAtStartup = 0
 let g:go_def_mapping_enabled = 0
 
 " Run GoImports when saving data from buffer to file
-autocmd FileType go autocmd BufWritePre <buffer> GoImports
+" autocmd FileType go autocmd BufWritePre <buffer> GoImports
 
 " Highlight
 let g:go_highlight_functions = 1
