@@ -9,12 +9,14 @@ filetype plugin on
 
 syntax enable
 set number
+set relativenumber
 set ts=4
 set autoindent
 set expandtab
 set shiftwidth=4
-set cursorline
+" set cursorline
 set showmatch
+set mouse=a
 
 " Color Scheme
 colorscheme molokai
