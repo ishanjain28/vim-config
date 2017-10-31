@@ -14,12 +14,15 @@ set ts=4
 set autoindent
 set expandtab
 set shiftwidth=4
-" set cursorline
+set cursorline
 set showmatch
 set mouse=a
+set encoding=utf-8
 
 " Color Scheme
-colorscheme molokai
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 " Key Mappings
 nmap <F8> :TagbarToggle<CR> 
@@ -30,3 +33,5 @@ inoremap ;[ <esc>
 nnoremap <leader>s :mksession<CR>
 " nnoremap <C-Left> :tabprevious<CR>
 " nnoremap <C-Right> :tabnext<CR>
+
+
