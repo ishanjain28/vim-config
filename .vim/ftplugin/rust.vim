@@ -1,4 +1,3 @@
-2
 " ycm path for rust autocompletion
 let g:ycm_rust_src_path="/home/ishan/.rust-master/src/"
 
@@ -35,3 +34,9 @@ let g:syntastic_quiet_messages = { "!level": "errors" }
 
 let g:syntastic_rust_checkers = ['cargo']
 let g:syntastic_auto_jump = 3
+
+" Code folding
+" set foldmethod=indent
+" nnoremap <Leader>f za
+" Disable folding when opening a file
+" set nofoldenable

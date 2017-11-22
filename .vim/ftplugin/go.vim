@@ -64,3 +64,9 @@ au FileType go nmap <Leader>r <Plug>(go-run)
 au FileType go nmap <Leader>ra :<C-u>GoRun %<CR>
 " go doc  
 au FileType go nmap gd <Plug>(go-doc)
+
+" Code folding shortcuts
+" set foldmethod=index
+" nnoremap <Leader><Space> za
+" Disable folding when opening a file
+" set nofoldenable
